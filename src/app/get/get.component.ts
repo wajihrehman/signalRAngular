@@ -14,7 +14,7 @@ export class GetComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this._hubConnection = new HubConnectionBuilder().withUrl('https://localhost:5001/firstHub').build();
+    this._hubConnection = new HubConnectionBuilder().withUrl('https://localhost:44387/firstHub').build();
     this._hubConnection.start()
       .then(() =>
         console.log("Connection started"))

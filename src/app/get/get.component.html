@@ -6,7 +6,17 @@
     <br>
     <br>
 
-    {{signalData|json}}
-    <br>
-    <br>
+    <table style="border: 5px solid black;">
+        <tr style="border: 2px solid black;">
+            <th>ID</th>
+            <th>YEAR</th>
+
+        </tr>
+        <tr *ngFor="let x of signalData" style="border: 2px solid black;">
+            <td style="border: 2px solid black;">{{x.year_ID}}</td>
+            <td style="border: 2px solid black;">{{x.year_Decode}}</td>
+
+        </tr>
+
+    </table>
 </div>
